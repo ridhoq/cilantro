@@ -1,2 +1,2 @@
 # cilantro
-A simple tool to generate SBOMs for running containers in a Kubernetes cluster for collection to GUAC
+Generate SBOMs for containers pushed to Azure Container Registry and collect them into GUAC
