@@ -1,0 +1,22 @@
+replicaCount: 1
+
+image:
+  repository: cilantro
+  pullPolicy: IfNotPresent
+
+service:
+  type: ClusterIP
+  port: 5050
+
+ingress:
+  enabled: false
+  className: ""
+  hosts:
+    - host: chart-example.local
+      paths:
+        - path: /webhook
+          pathType: ImplementationSpecific
+  tls: []
+
+env: {}
+secrets: []
