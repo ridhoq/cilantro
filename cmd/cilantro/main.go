@@ -13,5 +13,6 @@ func main() {
 		fmt.Println(r.Body)
 	})
 
+	fmt.Println("Server is running on port 5050")
 	http.ListenAndServe(":5050", mux)
 }
