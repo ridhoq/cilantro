@@ -1,7 +1,8 @@
 replicaCount: 1
 
 image:
-  repository: cilantro
+  repository: ghcr.io/ridhoq/cilantro
+  tag: main
   pullPolicy: IfNotPresent
 
 service:
