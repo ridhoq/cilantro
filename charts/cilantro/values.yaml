@@ -11,6 +11,7 @@ service:
 
 ingress:
   enabled: false
+  annotations: {}
   className: ""
   hosts:
     - host: chart-example.local
