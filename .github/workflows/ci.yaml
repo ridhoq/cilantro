@@ -19,11 +19,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Configure Git
-        run: |
-          git config user.name "$GITHUB_ACTOR"
-          git config user.email "$GITHUB_ACTOR@users.noreply.github.com"
-
       - name: Docker meta
         id: meta
         uses: docker/metadata-action@v5
@@ -48,9 +43,3 @@ jobs:
           push: ${{ github.event_name != 'pull_request' }}
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
-
-      - name: Run chart-releaser
-        uses: helm/chart-releaser-action@v1.6.0
-        if: github.event_name != 'pull_request'
-        env:
-          CR_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
