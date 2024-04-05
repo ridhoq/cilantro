@@ -5,7 +5,7 @@ metadata:
 spec:
   type: {{ .Values.service.type }}
   ports:
-    - port: {{ .Values.service.port }}
-      targetPort: http
+    - targetPort: {{ .Values.service.port }}
+      port: {{ .Values.service.port }}
   selector:
     app: {{ include "cilantro.fullname" . }}
