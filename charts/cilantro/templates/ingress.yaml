@@ -24,7 +24,7 @@ spec:
             pathType: {{ .pathType }}
             backend:
               service:
-                name: {{ include "cilantro.fullname" . }}
+                name: {{ include "cilantro.fullname" $ }}
                 port:
                   number: {{ .Values.service.port }}
           {{- end }}
