@@ -2,6 +2,14 @@ apiVersion: v1
 entries:
   cilantro:
   - apiVersion: v2
+    created: "2024-04-05T02:26:34.86365229Z"
+    description: A Helm chart for Cilantro
+    digest: 78d381d40e28f1516555a282a0799f55182812b26409676cd48f2b69ca4824c5
+    name: cilantro
+    urls:
+    - https://github.com/ridhoq/cilantro/releases/download/cilantro-0.1.7/cilantro-0.1.7.tgz
+    version: 0.1.7
+  - apiVersion: v2
     created: "2024-04-05T02:13:54.36141075Z"
     description: A Helm chart for Cilantro
     digest: f8eb66825c3ad3ffdb4d81ec579fd9bb3761aabf556cdf17dc7e9d17335468be
@@ -49,4 +57,4 @@ entries:
     urls:
     - https://github.com/ridhoq/cilantro/releases/download/cilantro-0.1.1/cilantro-0.1.1.tgz
     version: 0.1.1
-generated: "2024-04-05T02:13:54.361505467Z"
+generated: "2024-04-05T02:26:34.86368449Z"
