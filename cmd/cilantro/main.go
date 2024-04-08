@@ -35,7 +35,9 @@ func RunCommand(app clio.Application) *cobra.Command {
 	}
 
 	return app.SetupCommand(&cobra.Command{
-		Use: "run",
+		Use:   "run <image>",
+		Short: "Generate and collect SBOM for an image",
+		Long:  "Generate a Software Bill of Materials (SBOM) for a container image and collect it into Graph for Understanding Artifact Composition (GUAC)",
 		RunE: func(cmd *cobra.Command, args []string) error {
 			return cilantro.RunCilantro(cmd.Context(), args[0], cfg.GUACGraphQLEndpoint, cfg.SBOMGenerator)
 		},
